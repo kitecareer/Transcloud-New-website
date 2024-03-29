@@ -245,31 +245,31 @@
 										<div class="col-lg-6">
 											<div class="form_box mb-3">
 												<input class="form-control" type="text" name="from_name" id="from_name"
-													placeholder="Your Name">
+													placeholder="Your Name" required/>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form_box mb-3">
-												<input class="form-control" type="text" name="email_id" id="email_id"
-													placeholder="Your Email">
+												<input class="form-control" type="text" name="subject" id="subject"
+													placeholder="Your Email"required>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form_box mb-3">
 												<input class="form-control" type="text" name="phone" id="phone"
-													placeholder="Phone Number">
+													placeholder="Phone Number"required>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form_box">
-												<input class="form-control" type="text" name="subject" id="subject"
-													placeholder="Subject">
+												<input class="form-control" type="text" name="subject1" id="subject1"
+													placeholder="Subject"required>
 											</div>
 										</div>
 										<div class="col-lg-12">
 											<div class="form_box">
 												<textarea class="form-control" type="text" name="message" id="message" cols="30"
-													rows="5" placeholder="Your Message"></textarea>
+													rows="5" placeholder="Your Message"required></textarea>
 											</div>
 											<div class="wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="1s">
 												<div class="quote_btn text_center pt-3">
@@ -516,6 +516,7 @@ document.getElementById('form')
     .then(() => {
       btn.value = 'Send Email';
       alert('Sent!');
+          location.reload(); // Reload the page after sending the email
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
