@@ -245,7 +245,7 @@ display: block !important;
 }
 .dreamit-header-logo a img {
     margin-top: 10px;
-    height:  90px;
+    /*height:  90px;*/
     width:  310px;
 }
 .sticky-logo{
@@ -525,7 +525,7 @@ slider-one
 }
 /* slider-three */
 .slider-three.slider-section{
-    background:url(assets/images/slider3.jpg);
+    background:url(assets/images/slider3.jpeg);
 }
 
 /* Default styles for .slider-one.slider-section */
